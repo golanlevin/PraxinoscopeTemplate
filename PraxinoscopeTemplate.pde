@@ -15,6 +15,7 @@ float diamArtInner = inch * 2.00;
 float diamArtOuter = inch * 6.00; 
 float diamCutInner = inch * 1.75; 
 float diamCutOuter = inch * 6.25; 
+// Note: as of 1/23/2018 these dimensions are not final! Check back soon.
 
 final int nFrames = 10; 
 int myFrameCount = 0;
