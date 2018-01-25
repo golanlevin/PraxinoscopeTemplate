@@ -139,7 +139,7 @@ void drawGuides() {
     }
 
     // Draw the red wedge outline, highlighting the main view.
-    int redWedge = 7;
+    int redWedge = 7; // assuming nFrames = 10
     for (int i=redWedge; i<=(redWedge+1); i++) {
       float angle = map(i, 0, nFrames, 0, TWO_PI); 
       float pxi = diamArtInner/2 * cos(angle);
@@ -256,7 +256,7 @@ void drawArtFrameAlternate(int whichFrame) {
 
 
   // Draw a little splat on the frame when it hits the ground. 
-  if (whichFrame == 9) {
+  if (whichFrame == (nFrames-1)) {
     stroke(0, 0, 0); 
     strokeWeight(0.5); 
     int nL = 10;
