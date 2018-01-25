@@ -186,6 +186,7 @@ void drawAllFrames() {
     pushMatrix();
     rotate(angle); 
     translate(0, 0-originY); 
+    scale(0.8, 0.8); // feel free to ditch this 
 
     int whichFrame = i; 
     if (bAnimate) {
