@@ -15,6 +15,9 @@ float diamArtInner = inch * 1.50;
 float diamArtOuter = inch * 4.80; 
 float diamCutInner = inch * 1.41; 
 float diamCutOuter = inch * 4.875; 
+float holeDy = inch * 0.23;
+float holeDx = inch * 0.20;
+float holeD = inch * 0.1;
 
 final int nFrames = 10; 
 int myFrameCount = 0;
@@ -110,6 +113,9 @@ void drawCutLines() {
     fill(240); 
   }
   ellipse(0, 0, diamCutInner, diamCutInner);
+  
+  noFill(); 
+  ellipse(diamCutOuter/2 - holeDx, 0-holeDy, holeD, holeD); 
   
   line (diamCutInner/2, 0, diamCutOuter/2, 0);
 }
